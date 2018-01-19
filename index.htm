@@ -199,7 +199,7 @@
               </div>
               <div class="col-md-6 mb-3">
                 <label for="cc-number">Credit card number</label>
-                <input type="text" class="form-control" id="cc-number" placeholder="" autocomplete="cc-number" inputmode="numeric" pattern="[0-9]{14,23}" minlength="14" maxlength="23" required>
+                <input type="text" class="form-control" id="cc-number" placeholder="" autocomplete="cc-number" inputmode="numeric" pattern="[\d]{14,23}" minlength="14" maxlength="23" required>
                 <div class="invalid-feedback">
                   Credit card number is required
                 </div>
@@ -215,7 +215,7 @@
               </div>
               <div class="col-md-3 mb-3">
                 <label for="cc-expiration">CVV</label>
-                <input type="text" class="form-control" id="cc-cvv" placeholder="" inputmode="numeric" pattern="[0-9]{3,4}" minlength="3" maxlength="4" required>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" inputmode="numeric" pattern="[\d]{3,4}" minlength="3" maxlength="4" required>
                 <div class="invalid-feedback">
                   Security code required
                 </div>
