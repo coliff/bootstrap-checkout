@@ -106,7 +106,7 @@
 
             <div class="mb-3">
               <label for="email">Email <span class="text-muted">(Optional)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <input type="email" class="form-control" id="email" autocomplete="email" maxlength="256" placeholder="you@example.com">
               <div class="invalid-feedback">
                 Please enter a valid email address for shipping updates.
               </div>
@@ -131,6 +131,7 @@
                 <select class="custom-select d-block w-100" id="country" required>
                   <option value="" selected disabled>Choose...</option>
                   <option>United States</option>
+                  <option>Japan</option>
                 </select>
                 <div class="invalid-feedback">
                   Please select a valid country.
@@ -139,7 +140,7 @@
               <div class="col-md-4 mb-3">
                 <label for="state">State</label>
                 <select class="custom-select d-block w-100" id="state" required>
-                  <option value="">Choose...</option>
+                  <option value="" selected disabled>Choose...</option>
                   <option>California</option>
                 </select>
                 <div class="invalid-feedback">
@@ -192,7 +193,7 @@
               </div>
               <div class="col-md-6 mb-3">
                 <label for="cc-number">Credit card number</label>
-                <input type="text" class="form-control" id="cc-number" placeholder="" autocomplete="cc-number" inputmode="numeric" pattern="[0-9]{14,23}" required>
+                <input type="text" class="form-control" id="cc-number" placeholder="" autocomplete="cc-number" inputmode="numeric" pattern="[0-9]{14,23}" minlength="14" maxlength="23" required>
                 <div class="invalid-feedback">
                   Credit card number is required
                 </div>
@@ -208,7 +209,7 @@
               </div>
               <div class="col-md-3 mb-3">
                 <label for="cc-expiration">CVV</label>
-                <input type="text" class="form-control" id="cc-cvv" placeholder="" inputmode="numeric" minlength="3" maxlength="4" required>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" inputmode="numeric" pattern="[0-9]{3,4}" minlength="3" maxlength="4" required>
                 <div class="invalid-feedback">
                   Security code required
                 </div>
